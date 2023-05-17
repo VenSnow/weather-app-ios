@@ -10,6 +10,16 @@ import SwiftUI
 struct WeatherView: View {
     var weather: ResponseBody
     
+    let weatherIcons: [String?: String] = [
+        "Clear": "sun.max",
+        "Clouds": "cloud",
+        "Atmosphere": "cloud.fog",
+        "Snow": "snowflake",
+        "Rain": "cloud.rain",
+        "Drizzle": "cloud.drizzle",
+        "Thunderstorm": "cloud.bolt.rain",
+    ]
+    
     var body: some View {
         ZStack(alignment: .leading) {
             VStack {
@@ -28,28 +38,8 @@ struct WeatherView: View {
                     HStack {
                         VStack(spacing: 10) {
                             let mainWeather = weather.weather[0].main
-                            if (mainWeather == "Clear") {
-                                Image(systemName: "sun.max")
-                                    .font(.system(size: 40))
-                            } else if (mainWeather == "Clouds") {
-                                Image(systemName: "cloud")
-                                    .font(.system(size: 40))
-                            } else if (mainWeather == "Atmosphere") {
-                                Image(systemName: "cloud.fog")
-                                    .font(.system(size: 40))
-                            } else if (mainWeather == "Snow") {
-                                Image(systemName: "snowflake")
-                                    .font(.system(size: 40))
-                            } else if (mainWeather == "Rain") {
-                                Image(systemName: "cloud.rain")
-                                    .font(.system(size: 40))
-                            } else if (mainWeather == "Drizzle") {
-                                Image(systemName: "cloud.drizzle")
-                                    .font(.system(size: 40))
-                            } else if (mainWeather == "Thunderstorm") {
-                                Image(systemName: "cloud.bolt.rain")
-                                    .font(.system(size: 40))
-                            }
+                            Image(systemName: "\(weatherIcons[mainWeather] ?? "")")
+                                .font(.system(size: 40))
                             
                             Text(weather.weather[0].description)
                         }
@@ -65,7 +55,7 @@ struct WeatherView: View {
                     Spacer()
                         .frame(height: 80)
                     
-                    Image("weather-background").resizable().aspectRatio(CGSize(width: 45, height: 25), contentMode: .fit)
+                    Image("weather-background").resizable().aspectRatio(CGSize(width: 80, height: 35), contentMode: .fit)
                     
                     Spacer()
                     
