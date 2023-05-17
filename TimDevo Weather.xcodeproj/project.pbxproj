@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76ECEF3B2A148EC3001059D3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 76ECEF3A2A148EC3001059D3 /* .gitignore */; };
+		76ECEF3D2A148F93001059D3 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 76ECEF3C2A148F93001059D3 /* readme.md */; };
 		76F4845D2A13B883005D3268 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4845C2A13B883005D3268 /* LocationManager.swift */; };
 		76F484602A13BAD9005D3268 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4845F2A13BAD9005D3268 /* WelcomeView.swift */; };
 		76F484622A13D0A6005D3268 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F484612A13D0A6005D3268 /* LoadingView.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		76ECEF3A2A148EC3001059D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		76ECEF3C2A148F93001059D3 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		76F4845C2A13B883005D3268 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		76F4845F2A13BAD9005D3268 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		76F484612A13D0A6005D3268 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		76FB7C5E2A13ADB100910D9B = {
 			isa = PBXGroup;
 			children = (
+				76ECEF3C2A148F93001059D3 /* readme.md */,
 				76ECEF3A2A148EC3001059D3 /* .gitignore */,
 				76FB7C692A13ADB200910D9B /* TimDevo Weather */,
 				76FB7C682A13ADB200910D9B /* Products */,
@@ -182,6 +185,7 @@
 				76ECEF3B2A148EC3001059D3 /* .gitignore in Resources */,
 				76FB7C722A13ADB500910D9B /* Preview Assets.xcassets in Resources */,
 				76F4846A2A13E62D005D3268 /* weatherData.json in Resources */,
+				76ECEF3D2A148F93001059D3 /* readme.md in Resources */,
 				76FB7C6F2A13ADB500910D9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
