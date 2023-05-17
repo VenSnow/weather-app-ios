@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76F4845D2A13B883005D3268 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4845C2A13B883005D3268 /* LocationManager.swift */; };
+		76F484602A13BAD9005D3268 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4845F2A13BAD9005D3268 /* WelcomeView.swift */; };
+		76F484622A13D0A6005D3268 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F484612A13D0A6005D3268 /* LoadingView.swift */; };
+		76F484642A13D2DA005D3268 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F484632A13D2DA005D3268 /* WeatherManager.swift */; };
+		76F484662A13E488005D3268 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F484652A13E488005D3268 /* WeatherView.swift */; };
+		76F484682A13E4D7005D3268 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F484672A13E4D7005D3268 /* ModelData.swift */; };
+		76F4846A2A13E62D005D3268 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F484692A13E62D005D3268 /* weatherData.json */; };
+		76F4846C2A13E78E005D3268 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4846B2A13E78E005D3268 /* Extensions.swift */; };
+		76F4846F2A13F160005D3268 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4846E2A13F160005D3268 /* WeatherRow.swift */; };
 		76FB7C6B2A13ADB200910D9B /* TimDevo_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB7C6A2A13ADB200910D9B /* TimDevo_WeatherApp.swift */; };
 		76FB7C6D2A13ADB200910D9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB7C6C2A13ADB200910D9B /* ContentView.swift */; };
 		76FB7C6F2A13ADB500910D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FB7C6E2A13ADB500910D9B /* Assets.xcassets */; };
@@ -14,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76F4845C2A13B883005D3268 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		76F4845F2A13BAD9005D3268 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		76F484612A13D0A6005D3268 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		76F484632A13D2DA005D3268 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		76F484652A13E488005D3268 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		76F484672A13E4D7005D3268 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		76F484692A13E62D005D3268 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		76F4846B2A13E78E005D3268 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		76F4846E2A13F160005D3268 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 		76FB7C672A13ADB200910D9B /* TimDevo Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimDevo Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FB7C6A2A13ADB200910D9B /* TimDevo_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimDevo_WeatherApp.swift; sourceTree = "<group>"; };
 		76FB7C6C2A13ADB200910D9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +50,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76F4845B2A13B85E005D3268 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				76F4845C2A13B883005D3268 /* LocationManager.swift */,
+				76F484632A13D2DA005D3268 /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		76F4845E2A13BA5B005D3268 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76FB7C6C2A13ADB200910D9B /* ContentView.swift */,
+				76F4845F2A13BAD9005D3268 /* WelcomeView.swift */,
+				76F484612A13D0A6005D3268 /* LoadingView.swift */,
+				76F484652A13E488005D3268 /* WeatherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76F4846D2A13F144005D3268 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				76F4846E2A13F160005D3268 /* WeatherRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		76FB7C5E2A13ADB100910D9B = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +97,13 @@
 		76FB7C692A13ADB200910D9B /* TimDevo Weather */ = {
 			isa = PBXGroup;
 			children = (
+				76F4846D2A13F144005D3268 /* Components */,
+				76F4845E2A13BA5B005D3268 /* Views */,
+				76F4845B2A13B85E005D3268 /* Managers */,
 				76FB7C6A2A13ADB200910D9B /* TimDevo_WeatherApp.swift */,
-				76FB7C6C2A13ADB200910D9B /* ContentView.swift */,
 				76FB7C6E2A13ADB500910D9B /* Assets.xcassets */,
 				76FB7C702A13ADB500910D9B /* Preview Content */,
+				76F4846B2A13E78E005D3268 /* Extensions.swift */,
 			);
 			path = "TimDevo Weather";
 			sourceTree = "<group>";
@@ -63,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				76FB7C712A13ADB500910D9B /* Preview Assets.xcassets */,
+				76F484672A13E4D7005D3268 /* ModelData.swift */,
+				76F484692A13E62D005D3268 /* weatherData.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -126,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FB7C722A13ADB500910D9B /* Preview Assets.xcassets in Resources */,
+				76F4846A2A13E62D005D3268 /* weatherData.json in Resources */,
 				76FB7C6F2A13ADB500910D9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F484642A13D2DA005D3268 /* WeatherManager.swift in Sources */,
+				76F4846C2A13E78E005D3268 /* Extensions.swift in Sources */,
 				76FB7C6D2A13ADB200910D9B /* ContentView.swift in Sources */,
 				76FB7C6B2A13ADB200910D9B /* TimDevo_WeatherApp.swift in Sources */,
+				76F4845D2A13B883005D3268 /* LocationManager.swift in Sources */,
+				76F4846F2A13F160005D3268 /* WeatherRow.swift in Sources */,
+				76F484622A13D0A6005D3268 /* LoadingView.swift in Sources */,
+				76F484682A13E4D7005D3268 /* ModelData.swift in Sources */,
+				76F484662A13E488005D3268 /* WeatherView.swift in Sources */,
+				76F484602A13BAD9005D3268 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,11 +330,13 @@
 				DEVELOPMENT_TEAM = 557ZG5B5BL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "TimDevo Weather";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +361,13 @@
 				DEVELOPMENT_TEAM = 557ZG5B5BL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "TimDevo Weather";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
